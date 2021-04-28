@@ -1,0 +1,16 @@
+doctype html
+html
+    head
+        title #{raza}
+        meta(charset="utf-8")
+        link(rel="stylesheet", href="perro.css")
+
+    body
+        header
+            h1 #{raza}
+            figure
+                img( src= data.imagen width=500 )
+                figcaption #{data.texto}
+            a(href="/") Regresar
+
+

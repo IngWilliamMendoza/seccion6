@@ -1,0 +1,18 @@
+doctype html
+html
+    head
+        title #{titulo}
+        meta(charset="utf-8")
+        link(rel="stylesheet", href="styles.css")
+
+    body
+        header
+            h1 #{titulo}
+            figure
+                img( src= imagen )
+                figcaption #{texto}
+            ul
+                each perro in perros 
+                    li 
+                        a(href="perro/"+perro.raza)  #{perro.raza} &nbsp; | &nbsp;
+
